@@ -1,0 +1,37 @@
+[{
+        "title"     : "Client-Specific Equivalence Checking",
+        "conference": "ASE '18",
+        "authors"   : "F. Mora, Y. Li, J. Rubin, and M. Chechik",
+        "link"      : "https://dl.acm.org/citation.cfm?doid=3238147.3238178",
+        "code"      : "https://github.com/Client-Specific-Equivalence-Checker/CLEVER",
+        "slides"    : "pdfs/ase18_presentation.pdf",
+        "tags"      : "full"
+    },
+    {
+        "title"     : "StringFuzz: A Fuzzer for String Solvers",
+        "conference": "CAV '18",
+        "authors"   : "D. Blotsky, F. Mora, M. Berzish, Y. Zheng, I. Kabir, and V. Ganesh",
+        "link"      : "https://link.springer.com/chapter/10.1007/978-3-319-96142-2_6",
+        "code"      : "https://github.com/dblotsky/stringfuzz",
+        "slides"    : "https://easychair.org/smart-slide/slide/pN13#",
+        "tags"      : "short"
+    },
+    {
+        "title"     : "Synthesis in Uclid5",
+        "conference": "SYNT '20",
+        "authors"   : "F. Mora, K. Cheang, E. Polgreen, and S. Seshia",
+        "link"      : "pdfs/synt20.pdf",
+        "code"      : "https://github.com/uclid-org/uclid",
+        "slides"    : "",
+        "tags"      : "short"
+    },
+    {
+        "title"     : "BanditFuzz: A Reinforcement-Learning Based Performance Fuzzer for SMT Solvers (Presentation Only)",
+        "conference": "SMT '20",
+        "authors"   : "J. Scott, F. Mora, and V. Ganesh",
+        "link"      : "pdfs/smt20.pdf",
+        "code"      : "https://github.com/j29scott/BanditFuzz_Public",
+        "slides"    : "",
+        "tags"      : "short"
+    }
+]
