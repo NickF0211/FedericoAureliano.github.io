@@ -42,6 +42,10 @@
         "K. Cheang" : "https://github.com/kkmc",
 
         "ASE '18" : "http://www.ase2018.com/",
-        "CAV '18" : "http://cavconference.org/2018/"
+        "CAV '18" : "http://cavconference.org/2018/",
+
+        "Z3str4" : "https://z3str4.github.io/smtcomp.pdf",
+
+        "SMT-COMP 2020" : "https://smt-comp.github.io/2020/"
     }
 ]

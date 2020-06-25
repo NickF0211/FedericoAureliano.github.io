@@ -13,7 +13,7 @@ with open('includes/news.json') as f:
     news = json.load(f)
     news_list = ""
 
-    for n in news[:5]:
+    for n in news[:6]:
         print(n["date"])
         item = '<div class="news-item">'
         item += '<div class="news-date">' + n["date"] + '</div>'
