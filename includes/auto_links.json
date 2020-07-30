@@ -17,8 +17,8 @@
         "Y. Zheng": "https://zyh1121.github.io/",
 
         "Waterloo ML + Security + Verification Workshop": "https://ece.uwaterloo.ca/~MLSecurity/index.html",
-        "here is an interactive map of over 7000 known archaeological sites in Colombia" : "https://federicoaureliano.github.io/ArqCol/",
-        "here is an interactive map of almost 200 years of African-American periodicals" : "https://federicoaureliano.github.io/periodicals/",
+        "archaeological sites in Colombia" : "https://federicoaureliano.github.io/ArqCol/",
+        "African-American periodicals" : "https://federicoaureliano.github.io/periodicals/",
         "POPL Undergraduate Student Research Competition" : "https://popl20.sigplan.org/track/POPL-2020-Student-Research-Competition",
 
         "Murad Akhundov": "http://murad-akh.ca/",
@@ -46,6 +46,12 @@
 
         "Z3str4" : "https://z3str4.github.io/smtcomp.pdf",
 
-        "SMT-COMP 2020" : "https://smt-comp.github.io/2020/"
+        "SMT-COMP 2020" : "https://smt-comp.github.io/2020/",
+
+        "ASE '20" : "https://conf.researchr.org/home/ase-2020",
+        "VSTTE '20" : "https://sri-csl.github.io/VSTTE20/",
+
+        "N. Feng": "https://github.com/NickF0211",
+        "V. Hui": "https://github.com/vhui"
     }
 ]

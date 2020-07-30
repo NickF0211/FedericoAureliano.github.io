@@ -1,5 +1,14 @@
 [
     {
+        "title"     : "Scaling Client-Specific Equivalence Checking via Impact Boundary Search",
+        "conference": "ASE '20",
+        "authors"   : "N. Feng, F. Mora, V. Hui, and M. Chechik",
+        "link"      : "",
+        "code"      : "",
+        "slides"    : "",
+        "tags"      : "full"
+    },
+    {
         "title"     : "Synthesis in Uclid5",
         "conference": "SYNT '20",
         "authors"   : "F. Mora, K. Cheang, E. Polgreen, and S. Seshia",
@@ -9,7 +18,7 @@
         "tags"      : "short"
     },
     {
-        "title"     : "BanditFuzz: A Reinforcement-Learning Based Performance Fuzzer for SMT Solvers (Presentation Only)",
+        "title"     : "BanditFuzz: A Reinforcement-Learning Based Performance Fuzzer for SMT Solvers",
         "conference": "SMT '20",
         "authors"   : "J. Scott, F. Mora, and V. Ganesh",
         "link"      : "pdfs/smt20.pdf",

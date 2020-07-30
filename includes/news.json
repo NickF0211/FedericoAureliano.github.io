@@ -1,15 +1,23 @@
 [
     {
+        "date": "08/2020",
+        "text": "Our second paper on client-specific equivalence checking was accepted at ASE '20!"
+    },    
+    {
         "date": "07/2020",
         "text": "Z3str4 competed at SMT-COMP 2020!"
     },
     {
         "date": "07/2020",
-        "text": "Our workshop paper on synthesis in Uclid5 was accepted to SYNT '20!"
+        "text": "We presented our workshop paper on synthesis in Uclid5 at SYNT '20!"
     },
     {
         "date": "07/2020",
-        "text": "Our presentation on performance fuzzing for SMT solvers was accepted to SMT '20!"
+        "text": "We presented our work on performance fuzzing for SMT solvers at SMT '20 and VSTTE '20!"
+    },
+    {
+        "date": "06/2020",
+        "text": "Check out this interactive visualization of African-American periodicals!"
     },
     {
         "date": "05/2020",

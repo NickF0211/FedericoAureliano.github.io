@@ -1,7 +1,7 @@
 [
     {
         "headshot": "images/federico.JPG",
-        "blurb"   : "<p>My name is Federico <abbr title=\"paternal surname; not middle name\">Mora</abbr> <abbr title=\"maternal surname; doesn't appear in publications\">Rocha</abbr>. I am a Ph.D. student in computer science at the University of California, Berkeley, where I am advised by Sanjit A. Seshia.</p><p>I received an M.Sc. in computer science from the University of Toronto, where I  was advised by Marsha Chechik. I received a B.Sc. in computer science and mathematics from Mount Allison University.</p>",
+        "blurb"   : "<p>My name is Federico <abbr title=\"paternal surname; not middle name\">Mora</abbr> <abbr title=\"maternal surname; doesn't appear places where sorting by last name is important, like in publications\">Rocha</abbr>. I am a Ph.D. student in computer science at the University of California, Berkeley, where I am advised by Sanjit A. Seshia.</p><p>I received an M.Sc. in computer science from the University of Toronto, where I  was advised by Marsha Chechik. I received a B.Sc. in computer science and mathematics from Mount Allison University.</p>",
         "cv"      : "pdfs/cv.pdf",
         "email"   : "mailto:fmora@cs.berkeley.edu",
         "github"  : "https://github.com/FedericoAureliano",

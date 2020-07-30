@@ -13,13 +13,19 @@ with open('includes/news.json') as f:
     news = json.load(f)
     news_list = ""
 
-    for n in news[:6]:
+    for n in news[:5]:
         print(n["date"])
         item = '<div class="news-item">'
         item += '<div class="news-date">' + n["date"] + '</div>'
         item += '<div class="news-text">' + n["text"] + '</div>'
         item += '</div>\n\t\t'
         news_list += item
+
+    item = '<div class="news-item">'
+    item += '<div class="news-date">' + " " + '</div>'
+    item += '<div class="news-text">' + "<a href=\"./news.html\">See news from " + news[-1]["date"] + " to " + news[0]["date"] + '</a></div>'
+    item += '</div>\n\t\t'
+    news_list += item
 
 print("\nAdding full publications:")
 with open('includes/pubs.json') as f:
@@ -32,11 +38,11 @@ with open('includes/pubs.json') as f:
             item = '<div class="paper">'
             item += '<div class="conference">' + p["conference"] + '</div>'
             item += '<div class="citation">'
-            item += '<a href=\"' + p["link"] + '\">' + p["title"] + '</a> '
-            item += '<nobr><small>('
-            item += '<a href ="' + p["code"] + '">code</a>'
+            item += '<a href=\"' + p["link"] + '\">' + p["title"] + '</a> ' if p["link"] else p["title"]
+            item += '<nobr><small>(' if p["code"] or p["slides"] else ""
+            item += '<a href ="' + p["code"] + '">code</a>' if p["code"] else ""
             item += ', <a href="' + p["slides"] + '">slides</a>' if p["slides"] else ""
-            item += ')</small></nobr>'
+            item += ')</small></nobr>' if p["code"] or p["slides"] else ""
             item += '<br>' + p["authors"]
             item += '</div>'
             item += '</div>\n\t\t'
@@ -62,11 +68,6 @@ with open('includes/pubs.json') as f:
             item += '</div>'
             item += '</div>\n\t\t'
             short_pubs_list += item
-
-
-print("\nAdding other")
-with open('includes/other.txt') as f:
-    other = f.read()
 
 ### Define templates and fill them in
 
@@ -99,7 +100,7 @@ news_html = """
 
 full_pubs_html = """
 <div class="section">
-    <h3>Full Publications</h3>
+    <h3>Conference Research Papers</h3>
     <div class="hbar"> </div>
     <div id="publications">
         %s
@@ -109,23 +110,13 @@ full_pubs_html = """
 
 short_pubs_html = """
 <div class="section">
-    <h3>Short Publications</h3>
+    <h3>Workshop and Short Papers</h3>
     <div class="hbar"> </div>
     <div id="publications">
         %s
     </div>
 </div>
 """ % (short_pubs_list)
-
-other_html = """
-<div class="section">
-    <h3>Other</h3>
-    <div class="hbar"> </div>
-    <p id="other">
-        %s
-    </p>
-</div>
-""" % (other)
 
 
 ### Put it all together into a coherent index.html
@@ -156,9 +147,8 @@ body_html = """
     %s
     %s
     %s
-    %s
 </body>
-""" % (profile_html, news_html, full_pubs_html, short_pubs_html, other_html)
+""" % (profile_html, news_html, full_pubs_html, short_pubs_html)
 
 
 index_html = """
@@ -181,3 +171,53 @@ for name in auto_links.keys():
 
 with open('index.html', 'w') as index:
     index.write(index_html)
+
+########### News website
+with open('includes/news.json') as f:
+    news = json.load(f)
+    news_list = ""
+
+    for n in news:
+        print(n["date"])
+        item = '<div class="news-item">'
+        item += '<div class="news-date">' + n["date"] + '</div>'
+        item += '<div class="news-text">' + n["text"] + '</div>'
+        item += '</div>\n\t\t'
+        news_list += item
+
+news_section_html = """
+<div class="section">
+    <h3>News</h3>
+    <div class="hbar"> </div>
+    <div id="news">
+        %s
+    </div>
+</div>
+""" % (news_list)
+
+body_html = """
+<body>
+    %s
+</body>
+""" % (news_section_html)
+
+news_html = """
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+%s
+%s
+</html>
+""" % (head_html, body_html)
+
+### Add in the auto links
+print("\nAdding links:")
+for name in auto_links.keys():
+    if name in news_html:
+        print(name)
+        news_html = news_html.replace(name, "<a href=\"%s\">%s</a>" % (auto_links[name], name))
+
+### Write it to file
+
+with open('news.html', 'w') as index:
+    index.write(news_html)
