@@ -9,39 +9,12 @@
         "tags"      : "full"
     },
     {
-        "title"     : "Synthesis in Uclid5",
-        "conference": "SYNT '20",
-        "authors"   : "F. Mora, K. Cheang, E. Polgreen, and S. Seshia",
-        "link"      : "https://arxiv.org/abs/2007.06760",
-        "code"      : "https://github.com/uclid-org/uclid",
-        "slides"    : "https://drive.google.com/file/d/1g5FvceDG2lNNOFUVPWx-490Vf8BDguPC/view?usp=sharing",
-        "tags"      : "short"
-    },
-    {
-        "title"     : "BanditFuzz: A Reinforcement-Learning Based Performance Fuzzer for SMT Solvers",
-        "conference": "SMT '20",
-        "authors"   : "J. Scott, F. Mora, and V. Ganesh",
-        "link"      : "pdfs/smt20.pdf",
-        "code"      : "https://github.com/j29scott/BanditFuzz_Public",
-        "slides"    : "pdfs/smt20_presentation.pdf",
-        "tags"      : "short"
-    },
-    {
-        "title"     : "Client-Specific Equivalence Checking",
-        "conference": "ASE '18",
-        "authors"   : "F. Mora, Y. Li, J. Rubin, and M. Chechik",
-        "link"      : "https://dl.acm.org/citation.cfm?doid=3238147.3238178",
-        "code"      : "https://github.com/Client-Specific-Equivalence-Checker/CLEVER",
-        "slides"    : "pdfs/ase18_presentation.pdf",
+        "title"     : "Clause Size Reduction with all-UIP Learning",
+        "conference": "SAT '20",
+        "authors"   : "N. Feng, F. Bacchus",
+        "link"      : "https://link.springer.com/chapter/10.1007/978-3-030-51825-7_3",
+        "code"      : "",
+        "slides"    : "https://drive.google.com/file/d/1H4cb5YYHcG32sstgJktZ5dtKZ8Z_RueG/view?usp=sharing",
         "tags"      : "full"
-    },
-    {
-        "title"     : "StringFuzz: A Fuzzer for String Solvers",
-        "conference": "CAV '18",
-        "authors"   : "D. Blotsky, F. Mora, M. Berzish, Y. Zheng, I. Kabir, and V. Ganesh",
-        "link"      : "https://link.springer.com/chapter/10.1007/978-3-319-96142-2_6",
-        "code"      : "https://github.com/dblotsky/stringfuzz",
-        "slides"    : "https://easychair.org/smart-slide/slide/pN13#",
-        "tags"      : "short"
     }
 ]

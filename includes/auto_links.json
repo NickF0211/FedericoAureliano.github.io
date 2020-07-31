@@ -49,9 +49,13 @@
         "SMT-COMP 2020" : "https://smt-comp.github.io/2020/",
 
         "ASE '20" : "https://conf.researchr.org/home/ase-2020",
+        "SAT '20" : "https://sat2020.idea-researchlab.org", 
         "VSTTE '20" : "https://sri-csl.github.io/VSTTE20/",
-
-        "N. Feng": "https://github.com/NickF0211",
-        "V. Hui": "https://github.com/vhui"
+        "SAT Competition 2020" : "https://satcompetition.github.io/2020/results.html",
+        "V. Hui": "https://github.com/vhui", 
+        "F. Mora": "https://federicoaureliano.github.io",
+        "Randy Hickey" : "http://www.cs.toronto.edu/~rhickey/",
+        "Fahiem Bacchus" : "http://www.cs.toronto.edu/~fbacchus/",
+        "F. Bacchus" : "http://www.cs.toronto.edu/~fbacchus/"
     }
 ]

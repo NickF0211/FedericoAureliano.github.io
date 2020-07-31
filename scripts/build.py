@@ -41,7 +41,7 @@ with open('includes/pubs.json') as f:
             item += '<a href=\"' + p["link"] + '\">' + p["title"] + '</a> ' if p["link"] else p["title"]
             item += '<nobr><small>(' if p["code"] or p["slides"] else ""
             item += '<a href ="' + p["code"] + '">code</a>' if p["code"] else ""
-            item += ', <a href="' + p["slides"] + '">slides</a>' if p["slides"] else ""
+            item += '<a href="' + p["slides"] + '">slides</a>' if p["slides"] else ""
             item += ')</small></nobr>' if p["code"] or p["slides"] else ""
             item += '<br>' + p["authors"]
             item += '</div>'
@@ -74,19 +74,16 @@ with open('includes/pubs.json') as f:
 profile_html = """
 <div class="profile">
     <div class="profile-left">
-        <abbr title=\"Cartoon by Elizabeth Polgreen\">
-        <img class="headshot" align="left" src="%s" onmouseover="this.src='images/cartoon.png';" onmouseout="this.src='%s';" />
+        <img class="headshot" align="left" src="%s" />
         </abbr>
         %s
         <p>Here is my
-            <a href="%s">CV</a>,
-            <a href="%s">GitHub</a>, and
-            <a href="%s">Google Scholar</a>.
-        You can reach me at <a href="%s">fmora@cs.berkeley.edu</a>.
+            <a href="%s">CV</a>.
+        You can reach me at <a href="%s">fengnick@cs.toronto.edu</a>.
         </p>
     </div>
 </div>
-""" % (profile["headshot"], profile["headshot"], profile["blurb"], profile["cv"], profile["github"], profile["scholar"], profile["email"])
+""" % (profile["headshot"], profile["blurb"], profile["cv"], profile["email"])
 
 news_html = """
 <div class="section">
@@ -113,7 +110,7 @@ short_pubs_html = """
     <h3>Workshop and Short Papers</h3>
     <div class="hbar"> </div>
     <div id="publications">
-        %s
+        %s TBA
     </div>
 </div>
 """ % (short_pubs_list)
@@ -123,7 +120,7 @@ short_pubs_html = """
 
 head_html = """
 <head>
-    <title>Federico Mora Rocha</title>
+    <title>Nick Feng</title>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
